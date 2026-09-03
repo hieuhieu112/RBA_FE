@@ -1,0 +1,1 @@
+import{q as e}from"./index-Cy5rc7fb.js";const m={getAllRooms(){return e.get("/rooms")},getRoomById(o){return e.get(`/rooms/${o}`)},createRoom(o){return e.post("/rooms",o,{headers:{"Content-Type":"multipart/form-data"}})},updateRoom(o,r){return e.put(`/rooms/${o}`,r)},deleteRoom(o){return e.delete(`/rooms/${o}`)}};export{m as r};
