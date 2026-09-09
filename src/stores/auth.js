@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import api from '@/services/api'
 import router from '@/router'
 import axios from 'axios'
+import { apiBaseUrl } from '@/config/env'
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
@@ -20,7 +21,7 @@ export const useAuthStore = defineStore('auth', {
     async initAuth() {
       this.loading = true
       try {
-        const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api/v1'
+        const baseURL = apiBaseUrl
         const response = await axios.post(`${baseURL}/authen/refresh`, {}, {
           withCredentials: true
         })

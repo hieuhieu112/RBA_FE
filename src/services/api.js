@@ -1,9 +1,10 @@
 import axios from 'axios'
 import router from '@/router'
 import { useAuthStore } from '@/stores/auth'
+import { apiBaseUrl } from '@/config/env'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api/v1',
+  baseURL: apiBaseUrl,
   headers: {
     'Content-Type': 'application/json',
   },

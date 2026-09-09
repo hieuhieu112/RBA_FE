@@ -1,1 +1,0 @@
-import{q as e}from"./index-Cy5rc7fb.js";const t={getAllBookings(){return e.get("/bookings")},getBookingById(o){return e.get(`/bookings/${o}`)},createBooking(o){return e.post("/bookings",o)},cancelBooking(o){return e.delete(`/bookings/${o}`)}};export{t as b};
