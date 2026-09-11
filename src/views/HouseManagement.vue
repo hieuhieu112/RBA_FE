@@ -44,12 +44,14 @@ const fetchHouses = async () => {
 
 const openAddModal = () => {
   modalMode.value = 'add'
+  console.log('create test cicd')
   currentHouse.value = { name: '' }
   showModal.value = true
 }
 
 const openEditModal = (house) => {
   modalMode.value = 'edit'
+  console.log('edit test cicd')
   currentHouse.value = { ...house }
   showModal.value = true
 }
